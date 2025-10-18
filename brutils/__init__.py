@@ -29,6 +29,11 @@ from brutils.date_utils import convert_date_to_text, is_holiday
 # Email Import
 from brutils.email import is_valid as is_valid_email
 
+# IE Imports
+from brutils.ie import format_ie
+from brutils.ie import is_valid as is_valid_ie
+from brutils.ie import remove_symbols as remove_symbols_ie
+
 # IBGE Imports
 from brutils.ibge.municipality import (
     get_code_by_municipality_name,
@@ -93,6 +98,10 @@ __all__ = [
     "remove_symbols_cpf",
     # Email
     "is_valid_email",
+    # IE
+    "format_ie",
+    "is_valid_ie",
+    "remove_symbols_ie",
     # Legal Process
     "format_legal_process",
     "generate_legal_process",
